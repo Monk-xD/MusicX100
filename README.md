@@ -1,4 +1,4 @@
-="https://github.com/AnonymousX102
+
 - Upgrade and Update by :
 `sudo apt-get update && sudo apt-get upgrade -y`
 - Install Ffmpeg by :
