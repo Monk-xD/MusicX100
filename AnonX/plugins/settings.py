@@ -87,7 +87,7 @@ async def settings_back_markup(
             OWNER = None
         buttons = private_panel(_, app.username, OWNER)
         return await CallbackQuery.edit_message_text(
-            _["start_2"].format(message.from_user.mention),
+            _["start_2"].format(message.f,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
