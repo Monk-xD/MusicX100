@@ -475,3 +475,45 @@ async def markup_timer():
 
 
 asyncio.create_task(markup_timer())
+
+
+
+@app.on_callback_query(filters.regex("ABOUT"))
+
+async def ABOUT(_, query: CallbackQuery):
+
+    await query.edit_message_text(
+
+        f"""
+        ᴛʜɪs ʙᴏᴛ ɪs ᴘᴏᴡᴇʀᴇᴅ ʙʏ [𝙆𝘼𝙎𝙐𝙆𝘼𝘽𝙀 ☁️⃤](https://t.me/ksk_mainchat) ᴀssᴏᴄɪᴀᴛɪᴏɴ! 
+
+- ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀs
+• @idc_how_long_it_takes
+• @Loveugiyu
+
+ɪғ ʏᴏᴜ ᴀʀᴇ ғᴀᴄɪɴɢ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴏʀ ʙᴜɢs ᴡʜɪʟᴇ ᴜsɪɴɢ ᴛʜɪs ʙᴏᴛ, ᴛʜᴇɴ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ᴀᴛ ᴋᴀsᴜᴋᴀʙᴇ ᴍᴀɪɴ ᴄʜᴀᴛ.
+
+ᴛʜᴀɴᴋs ✨
+""",
+
+        reply_markup=InlineKeyboardMarkup(
+
+            [
+
+                [
+
+                    InlineKeyboardButton(
+
+                        "⬅️ Back", callback_data="settingsback_helper"),
+
+                    InlineKeyboardButton(
+
+                        "🚫 Close", callback_data="close")
+
+                ],                
+
+           ]
+
+        ),
+
+    )
