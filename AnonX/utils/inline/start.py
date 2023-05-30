@@ -37,7 +37,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
 
         [
             InlineKeyboardButton(
-                text="❗️ᴏᴡɴᴇʀ", user_id=OWNER
+                text="❗️ᴀʙᴏᴜᴛ", callback_data="ABOUT"
             ),
             InlineKeyboardButton(
                 text="❓ʜᴇʟᴘ", callback_data="settings_back_helper"
